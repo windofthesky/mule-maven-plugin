@@ -20,7 +20,7 @@
             <plugin>
                 <groupId>org.mule.tools.maven</groupId>
                 <artifactId>mule-maven-plugin</artifactId>
-                <version>3.0.0-SNAPSHOT</version>
+                <version>3.0.0-BETA1-SNAPSHOT</version>
                 <executions>
                     <execution>
                         <id>execution1</id>

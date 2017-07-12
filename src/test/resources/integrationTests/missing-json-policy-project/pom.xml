@@ -10,7 +10,7 @@
 	<name>Mule new-package Application</name>
 
 	<properties>
-		<mule.maven.plugin.version>3.0.0-SNAPSHOT</mule.maven.plugin.version>
+		<mule.maven.plugin.version>3.0.0-BETA1-SNAPSHOT</mule.maven.plugin.version>
 	</properties>
 
 	<build>
