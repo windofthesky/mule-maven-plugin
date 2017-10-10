@@ -112,7 +112,7 @@ public class ApplicationClassLoaderModelAssembler {
    */
   private List<BundleDependency> resolveApplicationDependencies(File targetFolder, BundleDescriptor projectBundleDescriptor) {
     List<BundleDependency> resolvedApplicationDependencies =
-        muleMavenPluginClient.resolveBundleDescriptorDependenciesWithWorkspaceReader(targetFolder, false, false,
+        muleMavenPluginClient.resolveBundleDescriptorDependenciesWithWorkspaceReader(targetFolder, false,
                                                                                      projectBundleDescriptor);
     return resolvedApplicationDependencies;
   }
@@ -126,7 +126,7 @@ public class ApplicationClassLoaderModelAssembler {
     Map<BundleDependency, List<BundleDependency>> muleDependenciesDependencies = new LinkedHashMap<>();
     for (BundleDependency muleDependency : mulePlugins) {
       List<BundleDependency> mulePluginDependencies =
-          muleMavenPluginClient.resolveBundleDescriptorDependencies(false, false, muleDependency.getDescriptor());
+          muleMavenPluginClient.resolveBundleDescriptorDependencies(false, muleDependency.getDescriptor());
       muleDependenciesDependencies
           .put(muleDependency, new ArrayList<>(mulePluginDependencies));
     }
